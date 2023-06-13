@@ -5,49 +5,191 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bai hoc htmk - css</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
   </head>
   <link rel="stylesheet" href="./css/style.css" />
   <body>
-    <div id="header" class="container-fluid">
+    <div id="header">
       <!-- ------------header------------ -->
-      <div class="container-fluid navbar__header">
+      <div class="navbar__header">
         <div class="navbar__overlay"></div>
         <h3>Ngành</h3>
         <h1>CÔNG NGHỆ THÔNG TIN</h1>
       </div>
       <!-- ------------Menu-------------- -->
       <div class="centered-list">
-        <ul>
+        <ul class="menu">
           <li><a href="">Trang chủ</a></li>
-          <li><a href="">Phần cứng</a></li>
-          <li><a href="">Lập trình web</a></li>
-          <li><a href="">Javascript</a></li>
+          <li class="dropdown">
+            <a href="">Phần cứng</a>
+            <ul class="submenu">
+              <li><a href="">CPU</a></li>
+              <li><a href="">RAM</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="">Phần mềm</a>
+            <ul class="submenu">
+              <li><a href="">Hệ điều hành</a></li>
+              <li><a href="">Ứng dụng văn phòng</a></li>
+            </ul>
+          </li>
           <li><a href="">Liên hệ</a></li>
         </ul>
       </div>
     </div>
-    <div id="hardware" class="container-fluid">
+    <div id="hardware">
       <div class="CPU">
-        <h1>CPU LÀ GÌ?????</h1>
-        <p>Viết nội dung vào đây</p>
+        <h1>CPU (Central Processing Unit)</h1>
+        <div class="content__CPU">
+          <img src="./img/CPU.jpg" alt="CPU" />
+          <p>
+            là một thành phần quan trọng của một máy tính hoặc thiết bị điện tử
+            khác, chịu trách nhiệm thực hiện các phép tính và điều khiển các
+            hoạt động của hệ thống. Nó được coi là "bộ não" của máy tính vì nó
+            thực hiện các phép tính và lưu trữ các hướng dẫn để điều khiển các
+            thành phần khác trong hệ thống
+          </p>
+          <p>
+            CPU là nơi các phép tính và các lệnh của chương trình được thực
+            hiện. Nó làm việc bằng cách nhận các hướng dẫn từ bộ nhớ và thực
+            hiện chúng, sau đó trả về kết quả. CPU có thể thực hiện nhiều loại
+            phép tính như cộng, trừ, nhân, chia và các phép tính logic. CPU
+            thường được gắn vào bo mạch chủ (mainboard) của máy tính và kết nối
+            với các thành phần khác như bộ nhớ, đĩa cứng, đồ họa và các thiết bị
+            ngoại vi khác thông qua các đường dẫn dữ liệu và điều khiển. Hiện
+            nay, có nhiều loại CPU khác nhau trên thị trường từ các nhà sản xuất
+            khác nhau. Mỗi loại CPU có kiến ​​trúc và hiệu năng riêng, ví dụ như
+            Intel và AMD là hai nhà sản xuất CPU phổ biến.
+          </p>
+        </div>
+        <div class="properties__CPU">
+          <div class="properties__1">
+            <h1>SOCKET</h1>
+            <p>
+              Trong ngữ cảnh CPU, socket (hay còn gọi là socket CPU hoặc socket
+              vi xử lý) là kết nối vật lý trên bo mạch chủ (mainboard) mà CPU
+              được gắn vào. Socket có vai trò chứa và kết nối CPU với các linh
+              kiện khác trên bo mạch chủ, như bộ nhớ, bộ điều khiển và các thành
+              phần khác. Mỗi loại CPU thường đi kèm với một socket riêng biệt,
+              và socket phải tương thích với CPU tương ứng. Điều này có nghĩa là
+              không thể gắn một CPU vào socket không tương thích. Mỗi socket có
+              các đặc điểm về vị trí, số lỗ pin và bố trí pin riêng biệt để phù
+              hợp với các chân của CPU.
+            </p>
+            <p>
+              <strong>
+                Quan trọng khi mua CPU mới là đảm bảo rằng CPU và socket trên bo
+                mạch chủ tương thích với nhau. Thông tin về socket hỗ trợ của bo
+                mạch chủ có thể được tìm thấy trong thông số kỹ thuật của nó
+                hoặc hướng dẫn sử dụng.</strong
+              >
+            </p>
+          </div>
+          <div class="properties__2">
+            <h1>CACHE</h1>
+            <p>
+              Cache là một loại bộ nhớ tạm thời nhanh và gần CPU, được sử dụng
+              để lưu trữ dữ liệu và hướng dẫn mà CPU sử dụng thường xuyên. Mục
+              đích chính của cache là cung cấp một bộ nhớ nhanh hơn so với bộ
+              nhớ chính (RAM) để tăng tốc độ truy xuất dữ liệu và cải thiện hiệu
+              suất hệ thống. Cache được tổ chức thành các cấp độ khác nhau,
+              chẳng hạn như cache cấp 1 (L1), cache cấp 2 (L2) và cache cấp 3
+              (L3). Cấp độ càng thấp thì cache càng gần CPU và có tốc độ truy
+              xuất nhanh hơn, nhưng dung lượng thường nhỏ hơn. Cấp độ càng cao,
+              cache càng có dung lượng lớn hơn nhưng tốc độ truy xuất có thể
+              chậm hơn. Khi CPU thực hiện các phép tính, nó thường truy xuất dữ
+              liệu và hướng dẫn từ bộ nhớ chính. Tuy nhiên, quá trình truy xuất
+              dữ liệu từ bộ nhớ chính có thể mất nhiều thời gian hơn so với việc
+              truy xuất từ cache. Do đó, cache được sử dụng để lưu trữ các dữ
+              liệu và hướng dẫn mà CPU có thể truy cập nhanh chóng mà không cần
+              phải truy xuất từ bộ nhớ chính. Khi CPU cần dữ liệu, nó sẽ kiểm
+              tra cache trước và chỉ truy xuất từ bộ nhớ chính nếu dữ liệu không
+              tồn tại trong cache. Nhờ vào tính chất của cache, nó giúp giảm
+              thời gian truy xuất dữ liệu và làm tăng tốc độ xử lý của CPU. Cấu
+              trúc và kích thước cache được thiết kế để tối ưu hóa hiệu suất và
+              đáp ứng các yêu cầu của CPU và ứng dụng.
+            </p>
+          </div>
+          <div class="properties__3">
+            <h1>Tốc độ xử lý</h1>
+            <p>
+              Tốc độ xử lý (processing speed) là một khái niệm đo lường khả năng
+              của một hệ thống xử lý (như CPU) trong việc thực hiện các phép
+              tính và xử lý thông tin. Tốc độ xử lý thường được đo bằng đơn vị
+              đồng hồ (hertz - Hz) và biểu thị số lần mà một hệ thống có thể
+              thực hiện một chu kỳ xử lý trong một giây. Đối với CPU, tốc độ xử
+              lý thường được gọi là tần số hoạt động (clock speed) và được đo
+              bằng GHz (gigahertz) hoặc MHz (megahertz). Tần số hoạt động biểu
+              thị số lần mà CPU hoạt động trên một giây, ví dụ: 3.5 GHz đại diện
+              cho 3.5 tỷ chu kỳ xử lý mỗi giây. Tuy nhiên, tốc độ xử lý không
+              phải lúc nào cũng là chỉ số duy nhất để đánh giá hiệu suất của một
+              hệ thống. Các yếu tố khác như kiến ​​trúc của CPU, số lõi, bộ nhớ
+              cache, hiệu quả của các bộ chỉ thị, và tối ưu hóa phần mềm cũng
+              ảnh hưởng đến hiệu suất tổng thể của hệ thống. Đáng lưu ý là không
+              phải lúc nào một CPU với tốc độ xử lý cao cũng tức là nhanh hơn
+              CPU khác với tốc độ xử lý thấp hơn. Các yếu tố khác như kiến
+              ​​trúc, hiệu quả thực hiện các lệnh và tối ưu hóa cũng cần được
+              xem xét để đánh giá hiệu suất thực tế của một hệ thống.
+            </p>
+          </div>
+        </div>
       </div>
       <div class="RAM">
         <h1>RAM LÀ GÌ???</h1>
-        <p>Viết nội dung vào đây</p>
+        <div class="content__RAM">
+          <img src="./img/RAM.jpg" alt="RAM" />
+          <p>
+            RAM (Random Access Memory) là một loại bộ nhớ trong máy tính và các
+            thiết bị điện tử khác. Nó được sử dụng để lưu trữ dữ liệu tạm thời
+            và hỗ trợ quá trình xử lý dữ liệu trong thời gian thực. RAM là nơi
+            mà máy tính lưu trữ dữ liệu và chương trình mà CPU đang hoạt động.
+            Nó cho phép CPU nhanh chóng truy cập và đọc/ghi dữ liệu mà không
+            phải chờ đợi truy xuất từ bộ nhớ lưu trữ chính (ví dụ: ổ cứng). RAM
+            có tốc độ truy cập rất nhanh, giúp cung cấp dữ liệu cho CPU một cách
+            hiệu quả và nhanh chóng.
+          </p>
+          <p>
+            Mỗi ô nhớ trong RAM được định danh bằng một địa chỉ duy nhất, cho
+            phép CPU truy cập vào ô nhớ cụ thể mà nó cần. RAM là bộ nhớ tạm thời
+            và nó mất điện khi máy tính tắt, do đó nó được gọi là bộ nhớ không
+            bền vững. Khi máy tính được khởi động lại, dữ liệu trong RAM sẽ bị
+            xóa. Dung lượng RAM của một hệ thống đo bằng đơn vị byte (ví dụ:
+            gigabyte - GB). Một dung lượng RAM lớn hơn cho phép máy tính xử lý
+            dữ liệu lớn và chạy các ứng dụng nặng một cách mượt mà. Hơn nữa, có
+            nhiều loại và tiêu chuẩn RAM khác nhau, chẳng hạn như DDR4, DDR5, và
+            DIMM, tùy thuộc vào loại và thế hệ của hệ thống.
+          </p>
+        </div>
+        <div class="properties__RAM">
+          <div class="properties__RAM1">
+            <h1>DDR3 (Double Data Rate 3)</h1>
+            <ul>
+              <li>Được ra mắt năm 2007.</li>
+              <li>
+                Dung lượng tối đa cho một thanh RAM DDR3 thường từ 1GB đến 16GB.
+              </li>
+              <li>
+                Tốc độ truyền dữ liệu tối đa trong DDR3 là 2133 MT/s
+                (megatransfers per second).
+              </li>
+              <li>Điện áp hoạt động là 1.5V.</li>
+              <li>
+                DDR3 sử dụng khe cắm DIMM (Dual In-Line Memory Module) để gắn
+                vào bo mạch chủ.
+              </li>
+            </ul>
+          </div>
+          <div class="properties__RAM2">
+            <h1>DDR3 (Double Data Rate 4)</h1>
+          </div>
+          <div class="properties__RAM3">
+            <h1>DDR3 (Double Data Rate 5)</h1>
+          </div>
+        </div>
       </div>
     </div>
-    <div id="software" class="container-fluid"></div>
-    <div id="javascript" class="container-fluid"></div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
+    <div id="software"></div>
+    <div id="javascript"></div>
+    <script src="./js/script.js"></script>
   </body>
 </html>

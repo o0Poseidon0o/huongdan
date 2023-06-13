@@ -32,9 +32,6 @@
   z-index: 2;
 }
 /* -----------------Menu------------------------ */
-#header {
-  text-align: center;
-}
 
 .centered-list {
   display: inline-block;
@@ -61,4 +58,98 @@
   background-color: aqua;
   border-radius: 10px;
   width: 200px;
+}
+/* ++++++++++++++++++++++++++++++++++++++ */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu .dropdown {
+  position: relative;
+}
+
+.menu .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f2f2f2;
+  padding: 0;
+  margin: 0;
+}
+
+.menu .submenu li {
+  display: block;
+}
+
+.menu .submenu li a {
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu .dropdown:hover > .submenu {
+  display: block;
+}
+/* --------------hardware-------------------- */
+/* -----------------CPU--------------------- */
+.CPU {
+  margin: 30px;
+}
+.CPU h1 {
+  text-align: center;
+}
+.content__CPU {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.content__CPU img {
+  border-radius: 20px;
+  margin-right: 20px;
+  height: 200px;
+}
+.content__CPU p {
+  margin-right: 20px;
+}
+/* ---------------------------------------- */
+.properties__CPU {
+  display: flex;
+  flex-direction: row;
+}
+.properties__1 {
+  width: 100%;
+  text-align: justify;
+  margin: 0px 30px 0px 20px;
+}
+.properties__2 {
+  width: 100%;
+  text-align: justify;
+  margin: 0px 30px 0px 20px;
+}
+.properties__3 {
+  flex-grow: 3;
+  width: 100%;
+  text-align: justify;
+  margin: 0px 10px 0px 10px;
+}
+/* --------------RAM------------------------- */
+.content__RAM {
+  display: flex;
+}
+.content__RAM p {
+  padding: 20px;
 }
