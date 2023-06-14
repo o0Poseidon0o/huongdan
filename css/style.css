@@ -128,7 +128,6 @@
 /* ---------------------------------------- */
 .properties__CPU {
   display: flex;
-  flex-direction: row;
 }
 .properties__1 {
   width: 100%;
@@ -141,15 +140,61 @@
   margin: 0px 30px 0px 20px;
 }
 .properties__3 {
-  flex-grow: 3;
   width: 100%;
   text-align: justify;
   margin: 0px 10px 0px 10px;
 }
-/* --------------RAM------------------------- */
+/* ----------------RAM------------------------- */
 .content__RAM {
   display: flex;
 }
 .content__RAM p {
   padding: 20px;
+}
+/* ------------------Power------------------- */
+.Power h1 {
+  text-align: center;
+}
+.content__power {
+  display: flex;
+}
+.content__power img {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 300px;
+}
+.properties__power {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-align: justify;
+  /* grid-template-rows: 80px 200px; hàng trên 80px hàng dưới 200px*/
+  /* justify-content: space-evenly; */
+  /*  justify-content: space-around;*/
+  /*  justify-content: space-between;*/
+  /* justify-content: center; */
+  /* justify-content: start; */
+  /* justify-content: end; */
+  /* ------------glign-content Property------------ */
+  /* align-content: center; */
+  /* align-content: space-evenly; */
+  /* align-content: space-around; */
+  /* align-content: space-between; */
+  /* align-content: start; */
+  /* align-content: end; */
+}
+
+.properties__power1 {
+  margin: 0px 20px 0px 20px;
+}
+
+.properties__power4 {
+  margin: 0px 20px 0px 20px;
+}
+.properties__power2 {
+  margin: 0px 20px 0px 20px;
+}
+.properties__power3 {
+  margin: 0px 20px 0px 20px;
+}
+.power1 {
+  display: flex;
 }
